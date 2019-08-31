@@ -45,7 +45,7 @@ describe('testing server.js', ()=> {
         })
     })
 
-    describe('POST /api/auth/login and /api/auth/register - good register but fail login', () => {
+    describe('POST /api/auth/login and /api/auth/register - successful registration but fail login', () => {
        
 
         it('should return 201 indicating that account was created - Successful Registration', async () => {
@@ -86,7 +86,7 @@ describe('testing server.js', ()=> {
 
     });
 
-    describe('POST registration and then login attempt to get  then jokes', () => {
+    describe('POST/GET 1) registration then 2) login then 3) attempt to get jokes', () => {
 
         it('should return 201 indicating that account was created', async () => {
             await db("users").truncate();
