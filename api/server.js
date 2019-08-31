@@ -11,7 +11,7 @@ const jokesRouter = require('../jokes/jokes-router.js');
 
 
 const sessionOptions = {
-    name:'mycookie',
+    name:'test_cookie',
     secret: 'cookiesruleeverythingaroundme',
     cookie: {
       maxAge: 1000 * 60 * 60 * 24, 
