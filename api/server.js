@@ -43,6 +43,7 @@ server.use(session(sessionOptions));
 server.use('/api/auth', authRouter);
 server.use('/api/jokes', authenticate, jokesRouter);
 
+//added this to test that server was running.
 server.get('/', (req, res) => {
     res.status(200).json({ api: 'up' });
   });

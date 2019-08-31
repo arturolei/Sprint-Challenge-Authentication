@@ -22,7 +22,7 @@ router.post('/login', validateUser, (req, res) => {
   // implement login
   let { username, password } = req.body;
   
-
+  //make sure username and password match
   Users.findBy({ username})
     .first()
     .then(user => {
